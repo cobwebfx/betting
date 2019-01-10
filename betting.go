@@ -36,6 +36,7 @@ func (b *Betting) Request(reqStruct interface{}, url BetfairRestURL, method stri
 		}
 
 		fmt.Println(string(filterBody))
+		fmt.Printf("=========================================%v================================", req)
 
 		req.SetBody(filterBody)
 	}
